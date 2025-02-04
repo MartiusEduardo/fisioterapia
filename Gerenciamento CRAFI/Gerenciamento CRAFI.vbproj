@@ -1,0 +1,1108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3B9CC93-5FB8-42E0-9B21-C47131FCE4D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Gerenciamento_CRAFI.My.MyApplication</StartupObject>
+    <RootNamespace>Gerenciamento_CRAFI</RootNamespace>
+    <AssemblyName>Gerenciamento CRAFI</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Sistema de Gerenciamento CRAFI</ProductName>
+    <PublisherName>Martius Eduardo</PublisherName>
+    <MinimumRequiredVersion>1.0.0.0</MinimumRequiredVersion>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Gerenciamento CRAFI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Gerenciamento CRAFI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icone crafi.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd" />
+    <Reference Include="DevExpress.Utils.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd" />
+    <Reference Include="DevExpress.XtraBars.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd" />
+    <Reference Include="DevExpress.XtraEditors.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd" />
+    <Reference Include="DevExpress.XtraGrid.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd" />
+    <Reference Include="DevExpress.XtraScheduler.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v10.1.Core, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd" />
+    <Reference Include="DevExpress.XtraScheduler.v10.1.Extensions, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpellChecker.v10.1, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd" />
+    <Reference Include="DevExpress.XtraSpellChecker.v10.1.Core, Version=10.1.5.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agenda.Designer.vb">
+      <DependentUpon>Agenda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anamnese dos Pacientes.Designer.vb">
+      <DependentUpon>Anamnese dos Pacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Anamnese dos Pacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Cirurgias.Designer.vb">
+      <DependentUpon>Cirurgias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cirurgias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conexao.vb" />
+    <Compile Include="Custo Fixo.Designer.vb">
+      <DependentUpon>Custo Fixo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custo Fixo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Custo Variavel.Designer.vb">
+      <DependentUpon>Custo Variavel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Custo Variavel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Despesa Fixa.Designer.vb">
+      <DependentUpon>Despesa Fixa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Despesa Fixa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Despesa Variavel.Designer.vb">
+      <DependentUpon>Despesa Variavel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Despesa Variavel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DRE.Designer.vb">
+      <DependentUpon>DRE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DRE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editar Contatos.Designer.vb">
+      <DependentUpon>Editar Contatos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Editar Contatos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exames Complementares.Designer.vb">
+      <DependentUpon>Exames Complementares.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Exames Complementares.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excluir Contatos.Designer.vb">
+      <DependentUpon>Excluir Contatos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Excluir Contatos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IE Contatos.Designer.vb">
+      <DependentUpon>IE Contatos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IE Contatos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modFiltros.vb" />
+    <Compile Include="Gerenciamento_CRAFIDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Gerenciamento_CRAFIDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Gerenciamento_CRAFIDataSet.vb">
+      <DependentUpon>Gerenciamento_CRAFIDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Gerenciamento_CRAFIDataSetTableAdapters.vb" />
+    <Compile Include="ImpostosSobrePS.Designer.vb">
+      <DependentUpon>ImpostosSobrePS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ImpostosSobrePS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imprimir Anamnese.Designer.vb">
+      <DependentUpon>Imprimir Anamnese.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimir Anamnese.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imprimir Convenio.Designer.vb">
+      <DependentUpon>Imprimir Convenio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimir Convenio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imprimir Convenios.Designer.vb">
+      <DependentUpon>Imprimir Convenios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimir Convenios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imprimir Evolucao Clinica.Designer.vb">
+      <DependentUpon>Imprimir Evolucao Clinica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimir Evolucao Clinica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imprimir Evolucoes Clinicas.Designer.vb">
+      <DependentUpon>Imprimir Evolucoes Clinicas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimir Evolucoes Clinicas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imprimir Paciente.Designer.vb">
+      <DependentUpon>Imprimir Paciente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimir Paciente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imprimir Pacientes.Designer.vb">
+      <DependentUpon>Imprimir Pacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimir Pacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imprimir Profissionais.Designer.vb">
+      <DependentUpon>Imprimir Profissionais.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimir Profissionais.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imprimir Profissional.Designer.vb">
+      <DependentUpon>Imprimir Profissional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimir Profissional.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imprimir Servico.Designer.vb">
+      <DependentUpon>Imprimir Servico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimir Servico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imprimir Servicos.Designer.vb">
+      <DependentUpon>Imprimir Servicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Imprimir Servicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IE Custo Fixo.Designer.vb">
+      <DependentUpon>IE Custo Fixo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IE Custo Fixo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IE Custo Variavel.Designer.vb">
+      <DependentUpon>IE Custo Variavel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IE Custo Variavel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IE Despesa Fixa.Designer.vb">
+      <DependentUpon>IE Despesa Fixa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IE Despesa Fixa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IE Despesa Variavel.Designer.vb">
+      <DependentUpon>IE Despesa Variavel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IE Despesa Variavel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IE Receita.Designer.vb">
+      <DependentUpon>IE Receita.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IE Receita.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modIDE.vb" />
+    <Compile Include="Passaporte.Designer.vb">
+      <DependentUpon>Passaporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Passaporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pesquisar Evolucao Clinica.Designer.vb">
+      <DependentUpon>Pesquisar Evolucao Clinica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pesquisar Evolucao Clinica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receitas.Designer.vb">
+      <DependentUpon>Receitas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receitas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio Aniversariantes.Designer.vb">
+      <DependentUpon>Relatorio Aniversariantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio Aniversariantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editar Convenios.Designer.vb">
+      <DependentUpon>Editar Convenios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Editar Convenios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editar Evolucoes Clinicas.Designer.vb">
+      <DependentUpon>Editar Evolucoes Clinicas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Editar Evolucoes Clinicas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editar Pacientes.Designer.vb">
+      <DependentUpon>Editar Pacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Editar Pacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editar Profissionais.Designer.vb">
+      <DependentUpon>Editar Profissionais.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Editar Profissionais.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editar Servicos.Designer.vb">
+      <DependentUpon>Editar Servicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Editar Servicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editar Usuarios.Designer.vb">
+      <DependentUpon>Editar Usuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Editar Usuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evolucao Clinica Pacientes.Designer.vb">
+      <DependentUpon>Evolucao Clinica Pacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Evolucao Clinica Pacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excluir Convenios.Designer.vb">
+      <DependentUpon>Excluir Convenios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Excluir Convenios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excluir Evolucao Clinica.Designer.vb">
+      <DependentUpon>Excluir Evolucao Clinica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Excluir Evolucao Clinica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excluir Pacientes.Designer.vb">
+      <DependentUpon>Excluir Pacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Excluir Pacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excluir Profissional.Designer.vb">
+      <DependentUpon>Excluir Profissional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Excluir Profissional.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excluir Servicos.Designer.vb">
+      <DependentUpon>Excluir Servicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Excluir Servicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excluir Usuario.Designer.vb">
+      <DependentUpon>Excluir Usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Excluir Usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anamnese.Designer.vb">
+      <DependentUpon>Anamnese.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Anamnese.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Incluir Consulta.Designer.vb">
+      <DependentUpon>Incluir Consulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Incluir Consulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IE Convenio.Designer.vb">
+      <DependentUpon>IE Convenio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IE Convenio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IE Evolucao Clinica.Designer.vb">
+      <DependentUpon>IE Evolucao Clinica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IE Evolucao Clinica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IE Pacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IE Pacientes.Designer.vb">
+      <DependentUpon>IE Pacientes.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IE Profissional.Designer.vb">
+      <DependentUpon>IE Profissional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IE Profissional.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IE Servicos.Designer.vb">
+      <DependentUpon>IE Servicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IE Servicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IE Usuario.Designer.vb">
+      <DependentUpon>IE Usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IE Usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mudar Senha.Designer.vb">
+      <DependentUpon>Mudar Senha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mudar Senha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Opcoes.Designer.vb">
+      <DependentUpon>Opcoes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Opcoes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio Aniversario Profissional.Designer.vb">
+      <DependentUpon>Relatorio Aniversario Profissional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio Aniversario Profissional.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio Consultas Dia.Designer.vb">
+      <DependentUpon>Relatorio Consultas Dia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio Consultas Dia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio Consultas Mes.Designer.vb">
+      <DependentUpon>Relatorio Consultas Mes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio Consultas Mes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio Demonstracao do Resultado do Exercicio.Designer.vb">
+      <DependentUpon>Relatorio Demonstracao do Resultado do Exercicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio Demonstracao do Resultado do Exercicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio ISACLI Grafico.Designer.vb">
+      <DependentUpon>Relatorio ISACLI Grafico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio ISACLI Grafico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio ISACLI.Designer.vb">
+      <DependentUpon>Relatorio ISACLI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio ISACLI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio Log Controle.Designer.vb">
+      <DependentUpon>Relatorio Log Controle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio Log Controle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio Login Entrada.Designer.vb">
+      <DependentUpon>Relatorio Login Entrada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio Login Entrada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="Sobre.Designer.vb">
+      <DependentUpon>Sobre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sobre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Agenda.resx">
+      <DependentUpon>Agenda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anamnese dos Pacientes.resx">
+      <DependentUpon>Anamnese dos Pacientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cirurgias.resx">
+      <DependentUpon>Cirurgias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custo Fixo.resx">
+      <DependentUpon>Custo Fixo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custo Variavel.resx">
+      <DependentUpon>Custo Variavel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Despesa Fixa.resx">
+      <DependentUpon>Despesa Fixa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Despesa Variavel.resx">
+      <DependentUpon>Despesa Variavel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DRE.resx">
+      <DependentUpon>DRE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DREReport.rdlc" />
+    <EmbeddedResource Include="Editar Contatos.resx">
+      <DependentUpon>Editar Contatos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exames Complementares.resx">
+      <DependentUpon>Exames Complementares.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excluir Contatos.resx">
+      <DependentUpon>Excluir Contatos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IE Contatos.resx">
+      <DependentUpon>IE Contatos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpostosSobrePS.resx">
+      <DependentUpon>ImpostosSobrePS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imprimir Anamnese.resx">
+      <DependentUpon>Imprimir Anamnese.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imprimir Convenio.resx">
+      <DependentUpon>Imprimir Convenio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imprimir Convenios.resx">
+      <DependentUpon>Imprimir Convenios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imprimir Evolucao Clinica.resx">
+      <DependentUpon>Imprimir Evolucao Clinica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imprimir Evolucoes Clinicas.resx">
+      <DependentUpon>Imprimir Evolucoes Clinicas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imprimir Paciente.resx">
+      <DependentUpon>Imprimir Paciente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imprimir Pacientes.resx">
+      <DependentUpon>Imprimir Pacientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imprimir Profissionais.resx">
+      <DependentUpon>Imprimir Profissionais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imprimir Profissional.resx">
+      <DependentUpon>Imprimir Profissional.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imprimir Servico.resx">
+      <DependentUpon>Imprimir Servico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imprimir Servicos.resx">
+      <DependentUpon>Imprimir Servicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImprimirAnamneseReport.rdlc" />
+    <EmbeddedResource Include="ImprimirConvenioReport.rdlc" />
+    <EmbeddedResource Include="ImprimirConveniosReport.rdlc" />
+    <EmbeddedResource Include="ImprimirEvolucaoClinicaReport.rdlc" />
+    <EmbeddedResource Include="ImprimirEvolucoesClinicasReport.rdlc" />
+    <EmbeddedResource Include="ImprimirPacienteReport.rdlc" />
+    <EmbeddedResource Include="ImprimirPacientesReport.rdlc" />
+    <EmbeddedResource Include="ImprimirProfissionaisReport.rdlc" />
+    <EmbeddedResource Include="ImprimirProfissionalReport.rdlc" />
+    <EmbeddedResource Include="ImprimirServicoReport.rdlc" />
+    <EmbeddedResource Include="ImprimirServicosReport.rdlc" />
+    <EmbeddedResource Include="IE Custo Fixo.resx">
+      <DependentUpon>IE Custo Fixo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IE Custo Variavel.resx">
+      <DependentUpon>IE Custo Variavel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IE Despesa Fixa.resx">
+      <DependentUpon>IE Despesa Fixa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IE Despesa Variavel.resx">
+      <DependentUpon>IE Despesa Variavel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IE Receita.resx">
+      <DependentUpon>IE Receita.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogControleReport.rdlc" />
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="Passaporte.resx">
+      <DependentUpon>Passaporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pesquisar Evolucao Clinica.resx">
+      <DependentUpon>Pesquisar Evolucao Clinica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfissionalAniversarianteReport.rdlc" />
+    <EmbeddedResource Include="Receitas.resx">
+      <DependentUpon>Receitas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio Aniversariantes.resx">
+      <DependentUpon>Relatorio Aniversariantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultasMesReport.rdlc" />
+    <EmbeddedResource Include="Editar Convenios.resx">
+      <DependentUpon>Editar Convenios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editar Evolucoes Clinicas.resx">
+      <DependentUpon>Editar Evolucoes Clinicas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editar Pacientes.resx">
+      <DependentUpon>Editar Pacientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editar Profissionais.resx">
+      <DependentUpon>Editar Profissionais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editar Servicos.resx">
+      <DependentUpon>Editar Servicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editar Usuarios.resx">
+      <DependentUpon>Editar Usuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Evolucao Clinica Pacientes.resx">
+      <DependentUpon>Evolucao Clinica Pacientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excluir Convenios.resx">
+      <DependentUpon>Excluir Convenios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excluir Evolucao Clinica.resx">
+      <DependentUpon>Excluir Evolucao Clinica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excluir Pacientes.resx">
+      <DependentUpon>Excluir Pacientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excluir Profissional.resx">
+      <DependentUpon>Excluir Profissional.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excluir Servicos.resx">
+      <DependentUpon>Excluir Servicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excluir Usuario.resx">
+      <DependentUpon>Excluir Usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anamnese.resx">
+      <DependentUpon>Anamnese.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Incluir Consulta.resx">
+      <DependentUpon>Incluir Consulta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IE Convenio.resx">
+      <DependentUpon>IE Convenio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IE Evolucao Clinica.resx">
+      <DependentUpon>IE Evolucao Clinica.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IE Pacientes.resx">
+      <DependentUpon>IE Pacientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IE Profissional.resx">
+      <DependentUpon>IE Profissional.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IE Servicos.resx">
+      <DependentUpon>IE Servicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IE Usuario.resx">
+      <DependentUpon>IE Usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mudar Senha.resx">
+      <DependentUpon>Mudar Senha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opcoes.resx">
+      <DependentUpon>Opcoes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AniversariantesReport.rdlc" />
+    <EmbeddedResource Include="Relatorio Aniversario Profissional.resx">
+      <DependentUpon>Relatorio Aniversario Profissional.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio Consultas Dia.resx">
+      <DependentUpon>Relatorio Consultas Dia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio Consultas Mes.resx">
+      <DependentUpon>Relatorio Consultas Mes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio Demonstracao do Resultado do Exercicio.resx">
+      <DependentUpon>Relatorio Demonstracao do Resultado do Exercicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio ISACLI Grafico.resx">
+      <DependentUpon>Relatorio ISACLI Grafico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio ISACLI.resx">
+      <DependentUpon>Relatorio ISACLI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ISACLIReport.rdlc" />
+    <EmbeddedResource Include="Relatorio Log Controle.resx">
+      <DependentUpon>Relatorio Log Controle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio Login Entrada.resx">
+      <DependentUpon>Relatorio Login Entrada.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogEntradaReport.rdlc" />
+    <EmbeddedResource Include="ISACLIGraficoReport.rdlc" />
+    <EmbeddedResource Include="ConsultasDiaReport.rdlc" />
+    <EmbeddedResource Include="Sobre.resx">
+      <DependentUpon>Sobre.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Gerenciamento_CRAFIDataSet.xsc">
+      <DependentUpon>Gerenciamento_CRAFIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Gerenciamento_CRAFIDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Gerenciamento_CRAFIDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Gerenciamento_CRAFIDataSet.xss">
+      <DependentUpon>Gerenciamento_CRAFIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button White Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9854_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Infragistics2.Shared.v10.3">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Shared.v10.3.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.Misc.v10.3">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.Misc.v10.3.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinEditors.v10.3">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinEditors.v10.3.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinGauge.v10.3">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinGauge.v10.3.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinGrid.v10.3">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinGrid.v10.3.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinListView.v10.3">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinListView.v10.3.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinSchedule.v10.3">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinSchedule.v10.3.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinSpellChecker.v10.3">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinSpellChecker.v10.3.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinStatusBar.v10.3">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinStatusBar.v10.3.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinTabControl.v10.3">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinTabControl.v10.3.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinToolbars.v10.3">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.UltraWinToolbars.v10.3.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.v10.3">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Infragistics2.Win.v10.3.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icone crafi.ico" />
+    <None Include="Resources\8437_32x32.png" />
+    <None Include="Resources\6141_32x32.png" />
+    <None Include="Resources\4998_32x32.png" />
+    <None Include="Resources\Button White Remove.png" />
+    <None Include="Resources\Button White Add.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

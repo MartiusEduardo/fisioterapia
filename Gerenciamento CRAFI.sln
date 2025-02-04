@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Gerenciamento CRAFI", "Gerenciamento CRAFI\Gerenciamento CRAFI.vbproj", "{E3B9CC93-5FB8-42E0-9B21-C47131FCE4D5}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GerenciamentoCRAFISetup", "GerenciamentoCRAFISetup\GerenciamentoCRAFISetup.vdproj", "{65411B27-4CAF-43AF-A620-94FD3E8B7097}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3B9CC93-5FB8-42E0-9B21-C47131FCE4D5}.Debug|x86.ActiveCfg = Debug|x86
+		{E3B9CC93-5FB8-42E0-9B21-C47131FCE4D5}.Debug|x86.Build.0 = Debug|x86
+		{E3B9CC93-5FB8-42E0-9B21-C47131FCE4D5}.Release|x86.ActiveCfg = Release|x86
+		{E3B9CC93-5FB8-42E0-9B21-C47131FCE4D5}.Release|x86.Build.0 = Release|x86
+		{65411B27-4CAF-43AF-A620-94FD3E8B7097}.Debug|x86.ActiveCfg = Debug
+		{65411B27-4CAF-43AF-A620-94FD3E8B7097}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
